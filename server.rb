@@ -7,6 +7,7 @@ if ENV['RACK_ENV'] == 'development'
 set :database, {adapter: 'sqlite3', database: 'database.sqlite3'}
 else
   ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
+end
 
 class User < ActiveRecord::Base
 end
