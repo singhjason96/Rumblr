@@ -1,0 +1,46 @@
+:root {
+
+}
+
+body {
+  background-color: #cceeff;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+.card {
+  margin-left: 40% ;
+  margin-top: 10%;
+  height: 25rem;
+  background-color: #1aa3ff;
+}
+
+button {
+  margin-left: 34%;
+  margin-top: 10%;
+  background-color: #e6f5ff;
+}
+
+label {
+  padding-top: 10%;
+  color: white;
+}
+
+
+/* a.btn.btn-primary {
+  margin-top: 50%;
+  margin-left: 36%;
+} */
+
+h5{
+  text-align: center;
+}
+
+#homecontainer {
+  margin-top: 10%;
+}
+
+#home-login{
+  margin-top: 50%;
+  margin-left: 40%;
+}
