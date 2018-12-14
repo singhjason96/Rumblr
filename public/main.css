@@ -11,7 +11,7 @@ body {
 }
 
 .card {
-  margin-top: 10%;
+
   height: 25rem;
   background-color: #1aa3ff;
 }
@@ -84,6 +84,7 @@ a#home-signup.btn.btn-primary {
 
 #loginbody {
   margin-left: 40%;
+  margin-top: 12%;
 }
 
 #newemail {

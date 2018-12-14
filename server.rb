@@ -15,6 +15,12 @@ end
 class Post < ActiveRecord::Base
 end
 
+# before ['/posts/new', '/login', '/users/new'] do
+# if session[:user_id] != nil
+#   redirect '/'
+# end
+# end
+
 get '/' do
   erb :home
 end
@@ -85,6 +91,7 @@ end
     redirect :"users/#{session["user_id"]}"
   end
 
+
   get '/posts/:id' do
     @post = Post.find_by(params['username'])
     @post.destroy
@@ -93,8 +100,8 @@ end
   end
 
   post "/logout" do
-  session['user_id'] = nil
-  redirect "/"
+  session[:user_id] == nil
+  redirect '/'
 end
 
 # get '/' do
