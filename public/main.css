@@ -12,7 +12,7 @@ body {
 
 .card {
 
-  height: 25rem;
+  /* height: 25rem; */
   background-color: #1aa3ff;
 }
 
@@ -137,8 +137,8 @@ a#home-signup.btn.btn-primary {
 }
 
 #tlcard {
-  width: 50rem;
-  margin-left: 22%;
+  margin-left: 20%;
+  margin-right: 20%;
   background-color: white;
   color:black
 }

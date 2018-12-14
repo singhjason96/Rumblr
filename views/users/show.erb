@@ -15,6 +15,9 @@
       <li class="nav-item active">
         <a class="nav-link" href="/">Logout <span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/users/:id">DELETE ACCOUNT <span class="sr-only">(current)</span></a>
+      </li>
       <% end %>
     </ul>
   </div>
@@ -23,3 +26,5 @@
 
 <h1><%=@user.username%></h1>
 <h1><%=@user.name%></h1>
+<h1><%=@user.email%></h1>
+<h1><%=@user.birthday%></h1>

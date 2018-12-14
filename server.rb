@@ -55,7 +55,7 @@ post '/users/new' do
 end
 
   get "/users/:id" do
-    @user = User.find(params['id'])
+    @user = User.find_by(params['id'])
     @posts = Post.where(user_id: params['id'])
     erb :'/users/show'
   end
