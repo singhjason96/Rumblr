@@ -1,0 +1,9 @@
+<% @posts.each do |ps| %>
+<div class="card mb-3" id="tlcard">
+  <div class="card-body">
+    <h5 class="card-title" id="tltitle"><%= ps.title %></h5>
+    <p class="card-text" id="tltext"><%= ps.content %></p>
+    <p class="card-text" id="author"><strong><%= ps.username %></strong></p>
+  </div>
+</div>
+<% end %>

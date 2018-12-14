@@ -1,0 +1,9 @@
+<h1>Title: <%= @post.title %></h1>
+<p> <%= @post.content %></p>
+<p> <%= session['user_email'] %></p>
+
+
+
+<form action="/posts/?" method="get">
+  <input type="submit" value="View all posts" />
+</form>

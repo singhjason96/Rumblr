@@ -14,32 +14,32 @@
   </p>
 
 </form> -->
-
-<form action='/users/new' method='post'>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="Name">Name</label>
-      <input type="name" class="form-control" name="name" placeholder="Enter Name">
+<div class="card" id="newformcard">
+  <h5 class="card-header">Become A Member</h5>
+  <div class="card-body">
+    <form action='/users/new' method='post'>
+        <div class="form-group col-md-6">
+          <label for="Name" id="namelabel">Name</label>
+          <input type="name" class="form-control" name="name" id="newname" placeholder="Enter Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="Username" id="newusername">Username</label>
+          <input type="username" class="form-control" name="username"  placeholder="Create Username">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputBirthday" id="newbirth">Birthday</label>
+          <input date="birthday" class="form-control" name="birthday"  placeholder="Month-Day-Year">
+        </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail" id='newemail'>Email</label>
+        <input type="email" class="form-control" name='email'  placeholder="Enter Email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword" id="newpass">Password</label>
+        <input type="password" class="form-control" name='password'  placeholder="Create a Password">
     </div>
-    <div class="form-group col-md-6">
-      <label for="Username">Username</label>
-      <input type="username" class="form-control" name="username" placeholder="Create Username">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputBirthday">Birthday</label>
-      <input type="birthday" class="form-control" name="birthday" placeholder="Month-Day-Year">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputEmail">Email</label>
-    <input type="email" class="form-control" name='email' placeholder="Enter Email">
-  </div>
-  <div class="form-group">
-    <label for="inputPassword">Password</label>
-    <input type="password" class="form-control" name='password' placeholder="Create a Password">
-  </div>
 
-
-
-  <button type="submit" class="btn btn-primary">Sign Up</button>
-</form>
+      <button type="submit" class="btn btn-primary" id="submitform">Sign Up</button>
+    </form>
+  </div>
+</div>

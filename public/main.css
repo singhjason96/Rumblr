@@ -2,6 +2,8 @@
 
 }
 
+
+
 body {
   background-color: #cceeff;
   font-family: 'Nunito', sans-serif;
@@ -9,7 +11,6 @@ body {
 }
 
 .card {
-  margin-left: 40% ;
   margin-top: 10%;
   height: 25rem;
   background-color: #1aa3ff;
@@ -34,13 +35,113 @@ label {
 
 h5{
   text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+a#home-signup.btn.btn-primary {
+  margin-top: 40%;
+  margin-left: 30%;
 }
 
 #homecontainer {
   margin-top: 10%;
+  margin-left: 18%;
+
 }
 
 #home-login{
   margin-top: 50%;
   margin-left: 40%;
+}
+
+#newformcard {
+  margin-top: 5%;
+  height: 37rem;
+  width: 55rem;
+  margin-left: 20%;
+}
+
+
+ #namelabel{
+   margin-top: -12%;
+   margin-left: 53%;
+ }
+
+#newusername {
+  margin-top: -12%;
+  margin-left: 53%;
+
+}
+
+#newbirth {
+  margin-top: -12%;
+  margin-left: 53%;
+
+}
+
+#loginbody {
+  margin-left: 40%;
+}
+
+#newemail {
+  margin-top: -12%;
+  margin-left: 53%;
+}
+
+#newpass {
+  margin-top: -12%;
+  margin-left: 50%;
+}
+
+#submitform {
+  margin-top: 1%;
+  margin-left: 44%;
+
+}
+
+#loginuser {
+  margin-left: -5%;
+}
+
+#loginpass {
+  margin-left: -5%;
+}
+
+#titlepost {
+  margin-right: 50%;
+
+}
+
+#usernametag {
+  margin-right: 50%;
+}
+
+#messagebox {
+  margin-right: 50%;
+  margin-top: -5%;
+}
+
+#sharebutton {
+  margin-left: 25%;
+}
+
+#titletag {
+}
+
+.form-control {
+  margin-left: 53%;
+}
+
+#tlcard {
+  width: 50rem;
+  margin-left: 22%;
+  background-color: white;
+  color:black
+}
+
+#tltitle {
+  color: black;
 }
