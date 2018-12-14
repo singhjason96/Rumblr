@@ -1,6 +1,6 @@
 require 'sinatra/activerecord'
 require 'sinatra'
-require 'sqlite3'
+
 enable :sessions
 
 if ENV['RACK_ENV'] == 'development'
