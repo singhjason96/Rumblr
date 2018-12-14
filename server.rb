@@ -3,11 +3,19 @@ require 'sinatra'
 
 enable :sessions
 
-if ENV['RACK_ENV'] == 'development'
-  ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
-else
-  set :database, {adapter: 'sqlite3', database: 'database.sqlite3'}
+configure :development do
+  set :database, "sqlite3:database.sqlite3"
 end
+
+configure :production do
+  set :database, ENV["DATABASE_URL"]
+end
+
+# if ENV['RACK_ENV'] == 'development'
+#   ActiveRecord::Base.establish_connection(ENV['DATABASE_URL'])
+# else
+#   set :database, {adapter: 'sqlite3', database: 'database.sqlite3'}
+# end
 
 class User < ActiveRecord::Base
 end
