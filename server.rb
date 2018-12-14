@@ -68,6 +68,7 @@ end
   post '/users/:id' do
     @user = User.find(params['id'])
     @user.destroy
+    @user.save
     redirect '/'
   end
 
