@@ -1,5 +1,11 @@
+<style>
+a.navbar-brand {
+  color:black;
+}
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/posts/:id">DUMBLR</a>
+  <a class="navbar-brand" style= "color: black;">DUMBLR</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,7 +24,10 @@
         <a class="nav-link" href="/posts/new">POST <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="/">Logout <span class="sr-only">(current)</span></a>
+        <a class="nav-link" onclick="myFunction()">Bool Mode <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/logout">Logout <span class="sr-only">(current)</span></a>
       </li>
       <% end %>
     </ul>
@@ -30,7 +39,9 @@
 <% @posts.each do |ps| %>
 <div class="card mb-3" id="tlcard">
   <div class="card-body">
-    <h5 class="card-title" id="tltitle"><%= ps.title %></h5>
+  <a href="/posts/<%= ps.id %>">
+      <h5 class="card-title" id="tltitle"><%= ps.title %></h5>
+    </a>
     <p class="card-text" id="tltext"><%= ps.content %></p>
     <p class="card-text" id="author"><strong><%= ps.username %></strong></p>
   </div>

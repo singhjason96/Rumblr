@@ -1,11 +1,26 @@
+<style>
+.card {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  color: black;
+
+}
+h5 {
+  color: black;
+}
+</style>
 
 
+  
+<div class="card" id="card-show">
+  <div class="card-body">
+    <h5 class="card-title"><%= @post.title %></h5>
+    <p> <%= @post.content %></p>
+    <% if  @canedit %>
+<a href="/posts/<%= @post.id%>/edit">Edit |</a>
+<% end %>
+<a href="/posts">Timeline</a>
 
-<h1>Title: <%= @post.title %></h1>
-<p> <%= @post.content %></p>
-
-
-
-<form action="/posts/?" method="get">
-  <input type="submit" value="View all posts" />
-</form>
+  </div>
+</div>

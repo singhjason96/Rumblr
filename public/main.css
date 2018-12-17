@@ -14,6 +14,7 @@ body {
 
   /* height: 25rem; */
   background-color: #1aa3ff;
+  
 }
 
 button {
@@ -142,6 +143,8 @@ a#home-signup.btn.btn-primary {
   background-color: white;
   color:black
 }
+
+
 
 #tltitle {
   color: black;
